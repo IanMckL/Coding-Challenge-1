@@ -19,7 +19,7 @@ let clickCount = 0;
 function generateButtonClick(){
     clickCount++;
     $('#main').append(`
-    <div id = "colorBlock" class = "colorBlockClass">
+    <div id = "colorBlock" style="background-color: red">
         <h1>${clickCount}</h1>
         <button id = "yellowButton">Yellow</button>
         <button id = "deleteButton">Delete</button>
@@ -30,12 +30,11 @@ function generateButtonClick(){
 //make div with id colorBlock yellow
 function makeYellow(){
     console.log('Yellow Pressed')
-    $('#colorBlock').css('background-color', 'yellow')
+    $(this).parent().css('background-color','yellow');
 }
 
 function deleteButton(){
     console.log('delete')
     clickCount --;
-    console.log(this)
-    console.log('Expect colorBlock', $(this.closest('#colorBlock')));
+    $(this).closest('#colorBlock').remove();
 }

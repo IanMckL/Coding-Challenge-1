@@ -1,3 +1,4 @@
-.colorBlockClass{
-    background-color: red;
+
+#colorBlock{
+  border-radius: 10px;
 }
