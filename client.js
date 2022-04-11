@@ -26,12 +26,10 @@ function generateButtonClick(){
 
 //make div with id colorBlock yellow
 function makeYellow(){
-    console.log('Yellow Pressed')
     $(this).parent().css('background-color','yellow');
 }
 //Delete parent 
 function deleteButton(){
-    console.log('delete')
     clickCount --;
     $(this).closest('#colorBlock').remove();
 }
