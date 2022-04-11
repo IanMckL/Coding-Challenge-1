@@ -17,7 +17,7 @@ function generateButtonClick(){
     clickCount++;
     $('#main').append(`
     <div id = "colorBlock" style="background-color: red">
-        <h1>${clickCount}</h1>
+        <p>${clickCount}</p>
         <button id = "yellowButton">Yellow</button>
         <button id = "deleteButton">Delete</button>
     </div>`)
