@@ -32,7 +32,7 @@ function makeYellow(){
     console.log('Yellow Pressed')
     $(this).parent().css('background-color','yellow');
 }
-
+//Delete parent 
 function deleteButton(){
     console.log('delete')
     clickCount --;
