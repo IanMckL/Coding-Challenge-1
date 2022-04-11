@@ -9,9 +9,6 @@ function onReady(){
     $(document).on('click','#yellowButton', makeYellow);
 }
 
-function laterButtons(){
-
-}
 
 //Define variable for click counter
 let clickCount = 0;
